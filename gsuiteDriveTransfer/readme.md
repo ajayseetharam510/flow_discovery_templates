@@ -1,4 +1,4 @@
-# Transfer user's Google Drive files and folders to another user in GSuite 
+# G Suite Offboarding: File Transfers 
 
 ## Overview
 
