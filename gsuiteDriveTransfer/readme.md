@@ -1,4 +1,4 @@
-# G Suite Offboarding: File Transfers 
+# GSuite Offboarding: File Transfers
 
 ## Overview
 
@@ -16,25 +16,37 @@ Before you get started, you will need:
     - Enter in an Account Nickname. This should be unique. If you are connecting multiple Google Drive accounts, then you’ll be able to tell them apart.
     - Click **Create** to finish this configuration.
 - Configure Okta Workflows flows to use the connection setting you just created and the "GSuite Drive Transfer" Okta Workflows table:
-    - In "[1.0] Start Transfer", choose the Google Drive connection setting for the "Create Transfer Request" card. Turn the flow On.
+    - In "[1.0] Start Transfer", choose the Google Drive connection setting for the "Create Transfer Request" card. 
+    - In "[1.0] Start Transfer", for the "Tables Search Rows" card, choose Options -  "GSuite Drive Transfer" Okta Workflows table. Turn the flow On.
     - In "[1.1] Read Specific Transfer Status" choose the Google Drive connection setting for the "Read Transfer Request" card. Turn the flow On.
-    - In "[1.0] Read Transfer Status as Scheduled Process" choose Options -  "GSuite Drive Transfer" Okta Workflows table with "All Matching Rows". Turn the flow On. 
+    - In "[1.0] Read Transfer Status as Scheduled Process" for the "Tables Search Rows" card, choose Options -  "GSuite Drive Transfer" Okta Workflows table with "All Matching Rows". Turn the flow On. 
 
 ## Testing this flow
--As Google Administrator access the [Google Admin console](https://admin.google.com) 
+
+As Google Administrator access the [Google Admin console](https://admin.google.com) 
+
+
 - Create two users - for example, `Luke Skywalker lukeskywalker@<your_domain.com>` and `Obiwan Kanobi obiwankanobi@<your_domain.com>` with known passwords for convenience during your test. (Replace <your_domain.com> with your domain. 
-- Assign "DocsMailDrive" to users from all organizational units. 
-- As `lukeskywalker@<your_domain.com>` access [Google Drive](https://drive.google.com)
-- Create a test document in Google Drive account of `Luke Skywalker` - we will transfer this document to `Obiwan Kanobi` 
-- On Workflows console click on play i.e. Run Flow icon for  "[1.0] Start Transfer" flow  to test it
-- Enter "from" and "to" parameters as:
-`lukeskywalker@<your_domain.com>` and
-`obiwankanobi@<your_domain.com>` respectively
-- Observe the entry in the "GSuite Drive Transfer" Okta Workflows table with the "G Suite Tranfer Request ID", "From" and "To" fields populated
-- On Workflows console click on play i.e. Run Flow icon for  "[1.0] Read Transfer Status as Scheduled  Process" flow  to test it
-- Re-run (if needed) until the entry in the  "GSuite Drive Transfer"  table is deleted
-- As `lukeskywalker@<your_domain.com>` access [Google Drive](https://drive.google.com) Check that the test document is not in Luke Skywalker's GDrive account. 
-- As `obiwankanobi@<your_domain.com>` access [Google Drive](https://drive.google.com) Check that the test document is in Obiwan Kanobi's GDrive account.  
+    - Access [Google Drive](https://drive.google.com) as `lukeskywalker@<your_domain.com>` 
+    - Create a test document in Google Drive account of `Luke Skywalker` - we will transfer this document to `Obiwan Kanobi` 
+
+On Okta Workflows console
+
+   - Click on play i.e. Run Flow icon for  "[1.0] Start Transfer" flow  to test it.
+   - Enter "from" and "to" parameters as:
+
+| Input Parameter  | Value  | 
+|:----------|:----------|
+| from    |  `lukeskywalker@<your_domain.com>`   | 
+| to    |  `obiwankanobi@<your_domain.com>`    | 
+
+   - Observe the entry in the "GSuite Drive Transfer" Okta Workflows table with the "G Suite Tranfer Request ID", "From" and "To" fields populated
+   - Click on play i.e. Run Flow icon for  "[1.0] Read Transfer Status as Scheduled  Process" flow  to test it
+   - Re-run (if needed) until the entry in the  "GSuite Drive Transfer"  table is deleted
+
+Access [Google Drive](https://drive.google.com) as `obiwankanobi@<your_domain.com>`.
+
+   - Check that Obiwan Kanobi has a new folder in Google Drive named `lukeskywalker@<your_domain.com>` and the test document is in it. The owner shows as the owner of the account i.e. Obiwan Kanobi.   
 
 ## Limitations & Known Issues
 
