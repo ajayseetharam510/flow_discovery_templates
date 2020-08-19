@@ -5,7 +5,7 @@
 
 In many organizations that integrate with web services, there is a requirement to be able to invoke a SaaS application (or on-premise API exposed via an API gateway) secured Http(s) end-point.  This sample illustrates the use of the Okta Workflows HTTP Raw Request card for GET, POST operations with sample *Content-Type* of *json* and *x-www-form-urlencoded*. It also illustrates how to process JSON using a variety of Okta workflow cards. 
 
-The sample is based on the tutorials "Making API Requests" [Part One](https://learn.workflows.okta.com/tutorials/unauthenticatedapi-walkthrough/ ), 
+The template is the end result of working through the tutorials "Making API Requests" [Part One](https://learn.workflows.okta.com/tutorials/unauthenticatedapi-walkthrough/ ), 
 [Part Two](https://learn.workflows.okta.com/tutorials/addbasicapi-walkthrough/) and [Part Three](https://learn.workflows.okta.com/tutorials/processjson-walkthrough/). The flow also illustrates additional cards using the [Postman Echo Service](https://docs.postman-echo.com/?version=latest) that is useful for debugging and troubleshooting. 
 
 ## Before you get Started/Pre-requisites: 
@@ -30,10 +30,20 @@ Before you get started, you will need:
     
 
 ## Testing this flow
-- Run the "Pet Store API-start to test endpoint" with input parameter `createAPICallParametersDynamically` set to `True`.
-    - Observe that the `Pets` Okta table has three entries.
+- Run the "Pet Store API-start to test endpoint" with input parameter as follows:
+
+    | Input parameter  | Value | 
+    |:----------|:----------|
+    | `createAPICallParametersDynamically` | `True`    | 
+    | `url`    |(leave blank)| 
+    |`ParamKey1`|(leave blank) |
+    |`ParamValue1`| (leave blank)|
+    |`ParamKey2`| (leave blank)| 
+    |`ParamValue2`|(leave blank)|
+
+    - Observe that the `Pets` Okta table that is a part of this template has three entries.
     - Review the Flow History for all the Http Raw Request Cards.
-- Run the "Pet Store API-start to test endpoint" with input parameters as follows:
+- Run the "Pet Store API-start to test endpoint" again with input parameters as follows:
 
      | Input parameter  | Value | 
      |:----------|:----------|
@@ -43,7 +53,7 @@ Before you get started, you will need:
      |`ParamValue1`|`Dog`|
      |`ParamKey2`|`page`| 
      |`ParamValue2`| `2`|
-    - Observe that the `Pets` Okta table has three additional entries.
+    - Observe that the `Pets` Okta table that is a part of this template has three additional entries same as the prior run (the order may be different).
     - Review the Flow History for all the Http Raw Request Cards.
 
 ## Limitations, Known Issues
