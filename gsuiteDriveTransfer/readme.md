@@ -27,8 +27,10 @@ As Google Administrator access the [Google Admin console](https://admin.google.c
 
 
 - Create two users - for example, `Luke Skywalker lukeskywalker@<your_domain.com>` and `Obiwan Kanobi obiwankanobi@<your_domain.com>` with known passwords for convenience during your test. (Replace <your_domain.com> with your domain. 
-    - Access [Google Drive](https://drive.google.com) as `lukeskywalker@<your_domain.com>` 
-    - Create a test document in Google Drive account of `Luke Skywalker` - we will transfer this document to `Obiwan Kanobi` 
+
+Access [Google Drive](https://drive.google.com) as `lukeskywalker@<your_domain.com>` 
+
+   - Create a test document in Google Drive account of `Luke Skywalker` - we will transfer this document to `Obiwan Kanobi` 
 
 On Okta Workflows console
 
@@ -40,7 +42,7 @@ On Okta Workflows console
 | from    |  `lukeskywalker@<your_domain.com>`   | 
 | to    |  `obiwankanobi@<your_domain.com>`    | 
 
-   - Observe the entry in the "GSuite Drive Transfer" Okta Workflows table with the "G Suite Tranfer Request ID", "From" and "To" fields populated
+   - Observe the entry in the "GSuite Drive Transfer" Okta Workflows table with the "G Suite Transfer Request ID", "From" and "To" fields populated
    - Click on play i.e. Run Flow icon for  "[1.0] Read Transfer Status as Scheduled  Process" flow  to test it
    - Re-run (if needed) until the entry in the  "GSuite Drive Transfer"  table is deleted
 
