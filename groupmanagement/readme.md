@@ -51,7 +51,7 @@ Before you get started, you will need:
         - The test user should be assigned `Group 1` and `Group 2` and `Group 3`
     - Update the `Title` attribute of the user to `Engineer` 
         - Run the `Fix Groups` flow; Enter the username of the test user you just created. 
-        - The test user should be assigned `Group 1` 
+        - The test user should be assigned `Group 3` 
 
 
 - Any additional groups that are assigned to the test user besides `Group 1`, `Group 2` and `Group 3` are unchanged. 
@@ -61,4 +61,4 @@ Before you get started, you will need:
 ## Limitations & Known Issues
 
 - Keep in mind the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm) to limit the entries in the Okta table, the flow memory limit and the Okta API rate limits. 
-
+]
