@@ -253,7 +253,7 @@ Before you get started, you will need:
 | Caller   | Choose any caller - this is a mandatory field  that has to be populated with a value  | 
 | Resolution Notes   | Enter any text such as "Add to group" -  this is a mandatory field  that has to be populated with a value  |
 | Resolution code | Choose any option such as "Solved (Permanently)" - this is a mandatory field  that has to be populated with a value|  
-| Approval | Choose "approved" - this is a mandatory field and is checked within the flow logic"|
+| Approval | Choose "approved" - this is a mandatory field and is checked within the flow logic|
 
 - Click on the "Resolve" button at top right of the Incident view.
 
