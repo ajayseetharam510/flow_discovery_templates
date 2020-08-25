@@ -3,7 +3,7 @@
 ## Overview
 
 
-In many organizations a set of Okta group memberships are determined based on Job Codes or more generally, by user profile attributes. 
+In many organizations a set of Okta group memberships are determined based on Job Codes or more generally, by user profile attributes to implement Role-based access control (RBAC).  
 
 To keep it simple, we will use the Okta profile attribute "Title" for job codes. Maybe you have users that have a title of "Engineer" and they have to be assigned to specific Okta Groups. When their title changes to "Manager" they have to be assigned to different Okta Groups. Then they get promoted to "VP" and they have other Okta group assignments. Okta table can store the mapping of the titles to groups. Any additional groups that are assigned to the user besides the groups listed in the Okta table are retained. 
 
