@@ -3,7 +3,7 @@
 ## Overview
 
 
-In many organizations that integrate with web services, there is a requirement to be able to invoke a SaaS application (or on-premise API exposed via an API gateway) secured Http(s) end-point.  This sample illustrates the use of the Okta Workflows HTTP Raw Request card for GET, POST operations with sample *Content-Type* of *json* and *x-www-form-urlencoded*. It also illustrates how to process JSON using a variety of Okta workflow cards. 
+In many organizations that integrate with web services, there is a requirement to be able to invoke a SaaS application (or on-premise API secured via an API gateway) secured Http(s) end-point.  This sample illustrates the use of the Okta Workflows HTTP Raw Request card for GET, POST operations with sample *Content-Type* of *json* and *x-www-form-urlencoded*. It also illustrates how to process JSON using a variety of Okta workflow cards. 
 
 The template is the end result of working through the tutorials "Making API Requests" [Part One](https://learn.workflows.okta.com/tutorials/unauthenticatedapi-walkthrough/ ), 
 [Part Two](https://learn.workflows.okta.com/tutorials/addbasicapi-walkthrough/) and [Part Three](https://learn.workflows.okta.com/tutorials/processjson-walkthrough/). The flow also illustrates additional cards using the [Postman Echo Service](https://docs.postman-echo.com/?version=latest) that is useful for debugging and troubleshooting. 
