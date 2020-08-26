@@ -1,4 +1,4 @@
-# GSuite Offboarding: File Transfers
+# Reassign Files while Deprovisioning with GSuite
 
 ## Overview
 
@@ -54,3 +54,4 @@ Access [Google Drive](https://drive.google.com) as `obiwankanobi@<your_domain.co
 
 - Keep in mind the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm) to limit the entries in the "GSuite Drive Transfer Tracker" Okta table. 
 - The "GSuite Drive Transfer Tracker" Okta table is not intended to be an audit log.
+Reassign Files while Deprovisioning with GSuite
