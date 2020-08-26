@@ -1,4 +1,4 @@
-# Approve Okta Group access in ServiceNow 
+# Workflows Template: ServiceNow Approvals
 
 ## Overview
 
