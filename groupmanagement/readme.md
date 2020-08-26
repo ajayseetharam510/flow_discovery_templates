@@ -1,4 +1,4 @@
-# Workflows Template: Manage Okta Group membership based on Job code or profile attribute Mapping
+# Workflows Template: Manage Okta Group Membership Based on Job Code or Profile Attribute Mapping
 
 ## Overview
 
