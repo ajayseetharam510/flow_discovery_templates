@@ -1,4 +1,4 @@
-# Making API Requests with the HTTP Request Card
+# Workflows Template: Make API Requests with the HTTP Request Card
 
 ## Overview
 
