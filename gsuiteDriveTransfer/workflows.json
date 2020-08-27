@@ -1,0 +1,18 @@
+{
+  "name": "Reassign_Files_while_Deprovisioning_with_GSuite",
+  "title": "Workflows Template: Reassign Files while Deprovisioning with GSuite",
+  "description": "In many organizations that use Google Drive, there is a requirement to transfer a user's GDrive contents to another user. May be you have users that need to be deactivated - you can transfer the files from the user's GDrive to the Manager and delete the user.",
+  "connectors": [
+    "Google Drive"
+  ],
+  "links": [
+    {
+      "title": "Video",
+      "destination": "https://www.youtube.com/watch?v=iMuCUhoB0v4"
+    },
+    {
+      "title": "Documentation",
+      "destination": "https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-main.htm"
+    }
+  ]
+}
