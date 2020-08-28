@@ -1,0 +1,26 @@
+{
+  "name": "servicenow_approvals",
+  "title": "Workflows Template: ServiceNow Approvals",
+  "description": "In many organizations that use ServiceNow, a subset of access may require approvals. Maybe you have users that are provisioned birthright access when created but a specific group access needs to be approved before being provisioned. For these use cases you can get approvals using ServiceNow.",
+  "connectors": [
+    "servicenow"
+  ],
+  "links": [
+    {
+      "title": "Video",
+      "destination": "https://www.youtube.com/watch?v=_qKuGrtPHTw"
+    },
+    {
+      "title": "ServiceNow Business Rules code snippet",
+      "destination": "https://github.com/ajayseetharam510/flow_discovery_templates/blob/master/snowApprovals/businessRuleOktaIncidentStateChangeToResolved.txt"
+    },
+    {
+      "title": "ServiceNow REST Message code snippet",
+      "destination": "https://github.com/ajayseetharam510/flow_discovery_templates/blob/master/snowApprovals/httpMethodPostContent.txt"
+    },
+    {
+      "title": "Documentation",
+      "destination": "https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-main.htm"
+    }
+  ]
+}
