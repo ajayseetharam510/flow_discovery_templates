@@ -54,7 +54,7 @@ Before you get started, you will need:
       | Days to mark as inactive  | 30   | 
       | Status  | New    | 
       | App Name  | My High Cost App   | 
-      | Email to notify  | <<Enter your email address>>  | 
+      | Email to notify  | Enter your email address  | 
  - Turn on all the flows
  - Manually run the flow `[0.0] Use for Initial set up of app users in tracker table`. 
    - Verify: You should now see all users that are currently assigned to the test app listed in the `Track User Access` table.
