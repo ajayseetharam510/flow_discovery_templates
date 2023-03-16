@@ -95,5 +95,5 @@ Before you get started, you will need:
 
   Therefore, it will not track Okta bookmark app access, for example. 
 - Consider app session times and the authentication policy - the design is dependent on okta app authentication events. 
-- For high rates of app assignments/unassignments it is better to have individual flows configured for each application rather than registering the Okta workflow api endpoint+filter for an Event hook. 
+- For high rates of app assignments/unassignments consider individual flows configured for each application or querying syslog for app assignments/unassignmens rather than registering the Okta workflow api endpoint+filter for an Event hook. 
 - The template is useful to identity inactive app users when the number of inactive days is set to durations of multiple weeks (example, 30 days) rather than being accurate in the minutes range. Syslog events are queried every 30 minutes but not processed in any specific time order.   
