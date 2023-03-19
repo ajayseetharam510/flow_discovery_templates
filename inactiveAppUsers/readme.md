@@ -64,12 +64,9 @@ Before you get started, you will need:
   - `[0.1] Load initial user to tracker table`
   - Note: In the future when you set up an additional `appInstanceId` you will repeat the above steps of adding a row to the `Configuration Data` and populating the `Track User Access` table with the users assigned to the Okta application.  
   
-- Create & Activate an Event Hook in the Okta Admin Console for the `User assigned to app` event, filter expression similar to the sample Expression Language provided below and the webhook endpoint value from the `[0.3] On App assignment` flow. 
+- Create & Activate **one** Event Hook in the Okta Admin Console for the **two events** - `User assigned to app` and `User unassigned from app`, with the same filter expression for **BOTH** events similar to the sample Expression Language provided below and the webhook endpoint value from the `[0.3] On App assignment` flow. 
   - Example Expression Language (for multiple applications): `event.target.?[type eq 'AppInstance' && id eq '0oa1msww4rqy48tjr1d7'].size() >0 OR event.target.?[type eq 'AppInstance' && id eq '0oa4cne1xokgO7pu21d7'].size() >0`
   
-- Create & Activate an Event Hook in the Okta Admin Console for the `User unassigned from app` event, filter expression similar to the sample Expression Language provided below and the webhook endpoint value from the `[0.4] On App unassignment` flow. 
-  - Example Expression Language (for multiple applications): `event.target.?[type eq 'AppInstance' && id eq '0oa1msww4rqy48tjr1d7'].size() >0 OR event.target.?[type eq 'AppInstance' && id eq '0oa4cne1xokgO7pu21d7'].size() >0`
- 
 - Manually change the `Configuration Data` table entry for the appInstanceId from “New” to “Ready” after you have completed this initial set up for  the application. This will have the `appInstanceId` get processed from now on.
  
 ## Testing this flow
